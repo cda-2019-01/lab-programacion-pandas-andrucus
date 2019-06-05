@@ -3,3 +3,7 @@
 ## de la tabla tbl0
 ## 
 
+import pandas as pd
+df0 = pd.read_csv('tbl0.tsv', sep='\t')
+
+df0.groupby('_c1').max()['_c2']
